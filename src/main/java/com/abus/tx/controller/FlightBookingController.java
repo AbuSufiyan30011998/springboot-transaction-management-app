@@ -18,7 +18,7 @@ public class FlightBookingController {
 	@Autowired
 	private FlightBookingService service;
 
-	@PostMapping("/bookFlightTicket")
+	@PostMapping( value = "/bookFlightTicket")
 	public FlightBookingAcknowledgement bookFlightTicket(@RequestBody FlightBookingRequest request) {
 		return service.bookFlightTicket(request);
 	}
